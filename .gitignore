@@ -192,3 +192,29 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Игнорировать всё в data
+data/**/*
+!data/.gitkeep
+!data/input_video/
+!data/models/
+!data/outputs/
+
+# Игнорировать содержимое каждой подпапки
+data/input_video/*
+data/models/*
+data/outputs/*
+
+# Разрешить структуру, но не файлы
+!data/input_video/.gitkeep
+!data/models/.gitkeep
+!data/outputs/.gitkeep
+
+# Игнорировать виртуальное окружение
+.venv/
+
+# Игнорировать временные и системные файлы
+__pycache__/
+*.pyc
+.DS_Store
+*.ipynb_checkpoints
